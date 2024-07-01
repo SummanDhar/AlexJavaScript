@@ -18,3 +18,21 @@ let muObj = {
 const myFunction = function(){
     console.log("Hello World");
 }
+
+//****************************************************** Memory **************************
+//Stack (Primitive)=>we get the copy of decleared variable , Heap(non primitive)=>get the reference of original value
+let myName = "Suman"
+let anotherName = myName
+anotherName = "Alex"
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+      name : "Virat",
+      age : 35
+}
+let useTwo = userOne
+useTwo.age = 36
+
+console.log(userOne.age);
+console.log(useTwo.age);
