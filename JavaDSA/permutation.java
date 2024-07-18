@@ -1,4 +1,4 @@
-package JavaDSA;
+//package JavaDSA;
 import java.util.*;
 
 public class permutation{
