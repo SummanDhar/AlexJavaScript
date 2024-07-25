@@ -24,7 +24,7 @@ class MajorityEle {
                 candidate2 = num;
                 count2 = 1;
             } else {
-                count1--;
+                 count1--;
                 count2--;
             }
         }
@@ -41,10 +41,10 @@ class MajorityEle {
         }
 
         int n = nums.length;
-        if (count1 > n / 2) {
+        if (count1 > n / 3) {
             result.add(candidate1);
         }
-        if (count2 > n / 2) {
+        if (count2 > n / 3) {
             result.add(candidate2);
         }
 
@@ -53,7 +53,7 @@ class MajorityEle {
 
     public static void main(String[] args) {
         MajorityEle solution = new MajorityEle();
-        int[] nums = {2,2,1,1,1,2,2,2};
+        int[] nums = {2,2,1,1,1,2,2,2,6,6,7,6,6,6};
         System.out.println(solution.majorityElement(nums)); // Output: [3]
     }
 }
